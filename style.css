@@ -15,39 +15,49 @@ p, a { font-size: 15px; }
 
 .bg-gray { background-color: #323232; }
 .bg-dblue { background-color: #383949; }
+.bg-menu { background-color: #6a6fd3; }
 .text-title { color: #5b5d88; }
 .text-subtitle { color: #aaa; }
+.text-menu { color: #6a6fd3; }
 .text-small { 
     font-size: 13px;
     color: #999;
  }
-.text-menu { color: #6a6fd3; }
+
 .nav-link { font-size: 14px; }
+.nav-link:hover { color: #6467ad; }
 .navbar-brand { font-size: 18px; }
 .card { background-color: #323232; }
-.nav-link:hover { color: #6467ad; }
 .img-cat {
-    width: max-content;
-    height: 110px;
+    width: 90%;
+    height: auto;
 }
 .img-product {
     width: max-content;
     height: 140px;
 }
+.img-supplier {
+    width: max-content;
+    height: 110px;
+}
+
 .category-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 100px 140px;
+    margin: 160px 140px 100px;
     gap: 0 20px;
 }
-.product-container, .about-container {
-    margin: 160px 140px;
-}
+.product-container, .about-container { margin: 160px 140px; }
 .product-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 0 20px;
+}
+.product-list div:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #383949;
 }
 .suplier-container {
     display: grid;
@@ -60,3 +70,10 @@ p, a { font-size: 15px; }
     background-color: #323232;
 }
 .footer-container a i { transform: scale(2); }
+nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
